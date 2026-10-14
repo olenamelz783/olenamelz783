@@ -1,0 +1,13 @@
+{
+  "notes": "tapFrac values are the real screen centres of the controls this codegen built. UI points are panel fractions corrected for the AspecterSA letterbox on the 1080x2400 capture device (FitInParent 0.46205357 fits 1242x2688 into 1242x2760, leaving a 31.1px band top and bottom): screenY = 1 - (31.13 + u*2337.7)/2400, screenX = panel x. The core tap is a WORLD point (0, 0.35) under an ortho-5 camera, so it needs no letterbox correction: screenY = (5 - 0.35)/10. Every step changes the screen: menu -> orbit sheet -> menu with the new orbit -> game board -> link armed -> route re-transmitting -> pause card -> summary card.",
+  "steps": [
+    { "waitLoader": true, "shot": "01_MenuOrbitChart" },
+    { "tapFrac": [0.500, 0.797], "label": "ORBITS", "wait": 1.8, "shot": "02_OrbitSelect" },
+    { "tapFrac": [0.500, 0.481], "label": "ORBIT_II_ROW", "wait": 1.8, "shot": "03_OrbitChosen" },
+    { "tapFrac": [0.500, 0.695], "label": "START_ROUTE", "waitLoader": true, "shot": "04_RouteWindow" },
+    { "tapFrac": [0.500, 0.465], "label": "CORE_ARM", "wait": 2.2, "shot": "05_LinkArmed" },
+    { "tapFrac": [0.500, 0.892], "label": "REPLAY_ROUTE", "wait": 1.4, "shot": "06_RouteSignal" },
+    { "tapFrac": [0.915, 0.060], "label": "PAUSE", "wait": 2.0, "shot": "07_OrbitHeld" },
+    { "tapFrac": [0.500, 0.661], "label": "END_ROUTE", "wait": 2.6, "shot": "08_RouteSummary" }
+  ]
+}

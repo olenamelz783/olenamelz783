@@ -1,0 +1,109 @@
+{
+  "style": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette",
+  "palette": [
+    "#11142C",
+    "#0A0C1C",
+    "#141B3A",
+    "#1B2350",
+    "#344ED0",
+    "#39C8D5",
+    "#F5D24D",
+    "#EC5B7A",
+    "#F7F4EB",
+    "#8E97C9"
+  ],
+  "notes": "One art style for the whole project, repeated word for word at the head of every prompt (rule F.1c). Every sprite declares its orientation in words (rule C.8): all but one are radially or bilaterally symmetric and say so, so the code never mirrors them; sprite_icon_back is the only asymmetric piece and is drawn as a chevron facing LEFT, which is exactly how it is used and never flipped. Sprites are drawn over whatever backdrop the model picks and matted out by the pipeline (rule F.1b), so no prompt argues about background colour. Nothing in this set carries a 9-slice border: every piece is square content drawn at a square size, and the UI chrome reuses the template's own sliced_solid_round plate. There is no coin or currency art: the only numbers this game shows are routes, streak and accuracy. No sprite contains a letter, a word or a logo.",
+  "assets": [
+    {
+      "name": "bg_main",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, a deep indigo void seen from inside a quiet star system, broad cobalt nebula bands sweeping from the lower left to the upper right, a few pale concentric orbit arcs drawn as thin glowing rings, scattered small cool-white stars, the central band kept calm and uncluttered as a safe area for menu panels, darkened at the very top and bottom, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no lens flare, no bokeh"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, the same indigo void about a third darker and much quieter, faint cobalt nebula only along the outer edges, the whole middle of the frame left almost empty and very low contrast so a bright orbit chart reads clearly on top of it, a few dim distant stars, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic, no lens flare, no bokeh"
+    },
+    {
+      "name": "sprite_beacon_idle",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_beacon_idle.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single dormant orbital beacon orb, cool steel-blue body with a darker core and a faint pale rim light, radially symmetric front view so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, minimal ground shadow, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_beacon_lit",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_beacon_lit.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single beacon orb blazing bright cyan, glowing core with a soft halo and a crisp outer edge, radially symmetric front view so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, minimal ground shadow, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_beacon_decoy",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_beacon_decoy.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single beacon orb flaring unstable rose pink, broken jagged ring of interference around a pink core, radially symmetric front view so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, minimal ground shadow, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_core_hub",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_core_hub.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single hexagonal station core, cobalt blue plating with a bright cyan iris in the middle and thin gold trim, radially symmetric front view so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, minimal ground shadow, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_orbit_ring",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_orbit_ring.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single thin glowing circular orbit ring, perfectly round and hollow in the middle, even line weight all the way round with small brighter dashes spaced along it, radially symmetric so rotating or mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_attempt_pip",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_attempt_pip.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single small diamond-shaped power cell, cyan glowing core inside a thin pale casing, bilaterally symmetric on both axes so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_streak_flare",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_streak_flare.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single four-point golden spark, long vertical and horizontal rays crossing at a bright warm centre, symmetric on both axes so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_back.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single chevron arrow icon, side view, facing LEFT, thick rounded cream stroke with a faint cyan glow, asymmetric left-pointing shape, one subject centred and whole in frame, no text, no other objects, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_pause",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_pause.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single pause icon, exactly two thick rounded vertical cream bars side by side with an even gap, bilaterally symmetric so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_close",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_close.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single close icon shaped as a bold X, two thick rounded cream strokes crossing at the centre, symmetric on both axes so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, no floor, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_badge_difficulty",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_badge_difficulty.png",
+      "prompt": "flat vector cartoon game art, soft inner glow, clean silhouette, bold flat shapes, cool indigo and cyan space palette, one single short rounded difficulty chip drawn as a small horizontal capsule segment with a glowing cyan fill and a thin pale casing, bilaterally symmetric so mirroring it changes nothing, one subject centred and whole in frame, no text, no other objects, no floor, not a photo, not photorealistic"
+    }
+  ]
+}
